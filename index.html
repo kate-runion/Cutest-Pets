@@ -82,6 +82,21 @@ footer>a, footer>a:visited {
 img, video {
   max-width: 100%;
 }
+
+@keyframes logoanimation {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    50% {
+        left: 200px;
+        top: 0px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
 #img-rotate {
     -ms-transform: rotate(345deg); /* Microsoft Edge */
     -webkit-transform: rotate(345deg); /* Chrome and Safari */
@@ -91,6 +106,22 @@ img, video {
     -ms-transform: rotate(15deg); /* Microsoft Edge */
     -webkit-transform: rotate(15deg); /* Chrome and Safari */
     transform: rotate(15deg);
+}
+#animation {
+    position: relative;
+    /* Safari and Chrome: */
+    -webkit-animation-name: logoanimation;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    animation-name: logoanimation;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
 }
 </style>
 <script>
