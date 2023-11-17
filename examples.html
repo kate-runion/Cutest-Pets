@@ -37,6 +37,11 @@ footer>a, footer>a:visited {
 #q2 div ~ p {
     color: green;
 }
+#borderimg {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(media/dog.png) 30 round;
+}
 </style>
 <script>
 function init() {
@@ -95,8 +100,7 @@ I used <code>div ~ p</code> to select paragraphs 3 and 4 and color them green.
 
 <section>
 <h2>Question 3: border-image property</h2>
-<p>
-</p>
+<p id="borderimg1">Here, the image tiles to fill the area. The image is rescaled if necessary, to avoid dividing tiles.</p>
 </section>
 
 <section>
