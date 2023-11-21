@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lesson 4 Test Questions in Practice</title>
+<style>
+body {
+    margin: 2vw;
+}
+a, a:visited {
+    text-decoration: none
+}
+section {
+    margin: 2vw 2vw 2vw 4vw;
+}
+section>h2 {
+    margin-left: -2vw;
+}
+h1, footer {
+    text-align: center;
+}
+canvas {
+    border: 1px solid #555;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+main>p {
+    width: 80vw;
+    margin-left: 10vw;
+}
+footer {
+    margin-top: 30px;
+}
+footer>a, footer>a:visited {
+    text-decoration: none;
+    color: #555;
+}
+/* Styles for specific quiz question examples */
+div#q1 {
+    height: 500px;
+    background-image: url(images/va_pond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.translucent {
+    opacity: 0.4;
+}
+section#q3 {
+    height: 535px;
+}
+section#q3>div {
+    position: relative;
+    display: inline;
+}
+section#q3>h2 {
+    margin-bottom: 35px;
+}
+section#q3>div>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+div#q4 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: purplebox;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes purplebox {
+    0% { background-color: purple; left: 0; top: 0; }
+    25% { background-color: grey; left: 200px; top: 0; }
+    50% { background-color: purple; left: 400px; top: 0; }
+    75% { background-color: black; left: 200px; top: 0; }
+    100% { background-color: black; left: 0; top: 0; }
+}
+div#q5 {
+    margin: 40px;
+    padding: 40px;
+    border: 3px solid grey;
+    outline: 3px solid purple;
+    outline-offset: 10px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<h1>Lesson 4 Test Questions in Practice</h1>
+</header>
+
+<main>
+<section>
+<h2>Question 1: Opacity</h2>
+<div id="q1" class="translucent">
+<pre>
+div#q1 {
+    height: 500px;
+    background-image: url(images/va_pond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.translucent {
+    opacity: 0.4;
+}
+applied to:
+&lt;div id="q1" class="translucent"&gt;
+</pre>
+</div>
+</section>
+
+<section id="q3">
+<h2>Question 3: Stacked Images Using Z-Index</h2>
+<div>
+<img src="images/SmallerYellowBox.png" alt="Smaller Yellow Box">
+<img src="images/BigPurpleBox.png" alt="Big Purple Box" style="z-index: -1;">
+</div>
+</section>
+
+<section>
+<h2>Question 4: CSS3 Animation</h2>
+<div id="q4"></div>
+</section>
+
+<section>
+<h2>Question 5: Outline-Offset</h2>
+<div id="q5">
+ACC Rocks!
+</div>
+</section>
+
+<section>
+<h2>Question 6: What Are UI Elements?</h2>
+<p>
+This question was about user interface (UI) elements.  Rather than example
+code here, I'll provide a link to an article titled
+<a href="https://www.usability.gov/how-to-and-tools/methods/user-interface-elements.html">
+User Interface Elements</a> on the
+<a href="https://www.usability.gov/">usability.gov</a> website.
+</p>
+</section>
+
+<section>
+<h2>Question 7: box-sizing: border-box</h2>
+<p>
+</p>
+</section>
+
+<section>
+<h2>Question 9: transition-delay not set</h2>
+<p>
+</p>
+</section>
+
+<section>
+<h2>Question 10: CSS3 UI properties</h2>
+<p>
+W3Schools gives us
+<a href="https://www.w3schools.com/csS/css3_user_interface.asp">CSS User
+Interface</a>, which presents CSS user interface properties <code>resize</code>
+and <code>outline-offset</code>.
+</p>
+</section>
+
+<section>
+<h2>Question 11: The appearance property</h2>
+<p>
+</p>
+</section>
+
+<section>
+<h2>Question 12: Transforms and transform properties</h2>
+<p>
+</p>
+</section>
+
+<section>
+<h2>Question 13: border-radius</h2>
+<p>
+</p>
+</section>
+
+<section>
+<h2>Question 14: resize property</h2>
+<p>
+</p>
+</section>
+
+<section>
+<h2>Question 15: animation-play-state</h2>
+<p>
+</p>
+</section>
+</main>
+
+<footer>
+<a id="vLink1"><strong> HTML </strong> Valid! </a> |
+<a id="vLink2"><strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>
+
