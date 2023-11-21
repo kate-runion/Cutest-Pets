@@ -91,7 +91,18 @@ div#q5 {
   border: 1px solid blue;
   box-sizing: border-box;
 }
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 2s;
+  transition-duration: 2s;
+}
 
+div:hover {
+  width: 300px;
+  height: 300px;
+}
 </style>
 <script>
 function init() {
@@ -170,9 +181,11 @@ User Interface Elements</a> on the
 </section>
 
 <section>
-<h2>Question 9: transition-delay not set</h2>
-<p>
-</p>
+<h2>Question 8: transition duration</h2>
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div></div>
+
 </section>
 
 <section>
